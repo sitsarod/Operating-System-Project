@@ -54,11 +54,11 @@ except:
 
 # ฟังก์ชันเดิม
 def get_status(dust):
-    if dust <= 12: return "EXCELLENT", "★★★★★"
-    elif dust <= 35.4: return "GOOD", "★★★★"
-    elif dust <= 55.4: return "MODERATE", "★★★"
+    if dust <= 12: return "GOOD", "★★★★★"
+    elif dust <= 35.4: return "MODERATE", "★★★★"
+    elif dust <= 55.4: return "UNHEALTHY FOR SENSITIVE", "★★★"
     elif dust <= 150.4: return "UNHEALTHY", "★★"
-    elif dust <= 250.4: return "VERY BAD", "★"
+    elif dust <= 250.4: return "VERY UNHEALTHY", "★"
     else: return "HAZARDOUS!", ":["
 
 # ฟังก์ชันเดิม
@@ -161,7 +161,7 @@ try:
             draw.rectangle((0, 0, 128, 12), fill="white")
             draw.text((10, 0), "PM2.5 MONITOR", fill="black", font=font_normal)
             draw.text((5, 18), f"{dust:.1f}", fill="white", font=font_large)
-            draw.text((70, 22), "AQI", fill="white", font=font_normal)
+            draw.text((70, 22), "µg/m³", fill="white", font=font_normal)
             draw.text((5, 38), f"{status}", fill="white", font=font_normal)
             draw.text((5, 50), f"{stars}", fill="white", font=font_normal)
         

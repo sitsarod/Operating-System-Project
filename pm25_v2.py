@@ -26,8 +26,8 @@ except Exception as e:
     print(f"✗ เชื่อมต่อ InfluxDB ไม่ได้: {e}")
 
 # ตั้งค่า Telegram Bot (โค้ดเดิม)
-TELEGRAM_BOT_TOKEN = "8592352462:AAEy3gNRMhWk8nIX4-0oaGxc8C5BVNaELXE"
-TELEGRAM_CHAT_ID = "5630438332"
+TELEGRAM_BOT_TOKEN = "LOL"
+TELEGRAM_CHAT_ID = "LOL"
 
 # ตั้งค่า GPIO สำหรับ LED ของเซ็นเซอร์ (โค้ดเดิม)
 LED_PIN = 24

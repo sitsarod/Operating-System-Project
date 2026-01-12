@@ -56,7 +56,7 @@ except:
 def get_status(dust):
     if dust <= 12: return "GOOD", "★★★★★"
     elif dust <= 35.4: return "MODERATE", "★★★★"
-    elif dust <= 55.4: return "UNHEALTHY FOR SENSITIVE", "★★★"
+    elif dust <= 55.4: return "SENSITIVE", "★★★"
     elif dust <= 150.4: return "UNHEALTHY", "★★"
     elif dust <= 250.4: return "VERY UNHEALTHY", "★"
     else: return "HAZARDOUS!", ":["
